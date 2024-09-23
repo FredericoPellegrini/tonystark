@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(imgs/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+header h1{
+    font-family: 'Bebas Neue', 'Roboto', sans-serif;
+    font-size: 50px;
+    color: #BF1E2E;
+}
+
+header h1 span{
+    font-family: 'Bebas Neue', 'Roboto', sans-serif;
+    font-size: 50px;
+    color: #CC5D2F;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    margin: 15px 10px 0 15px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+}
