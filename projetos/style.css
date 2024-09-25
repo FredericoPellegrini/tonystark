@@ -44,33 +44,34 @@ nav ul li a:hover {
     color: #fff;
 }
 
-.sobre-tony {
+.project {
     background-color: #BF1E2E;
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    max-width: 1250px;
+    flex-direction: row; 
+    width: 80%; 
+    max-width: 1250px; 
     padding: 10px;
     border-radius: 40px;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    position: relative;
-    top: 20px;
+    margin: 0 auto; 
+    position: relative; 
+    top: 20px; 
+    margin-bottom: 20px;
 }
 
-.sobre-tony img {
-    border-radius: 40px;
-    width: 100vh;
-    max-width: 400px;
+.project img {
+    border-radius: 10%;
+    width: 56vh;
 }
 
-.sobre-tony .texts {
+.project .text {
     margin: 15px;
     color: #E7ECF2;
     font-weight: bold;
     font-size: 18px;
 }
+
 
 @media screen and (max-width: 768px) {
     header h1 {
@@ -78,48 +79,20 @@ nav ul li a:hover {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: column; 
         align-items: center;
     }
 
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
+    .project {
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
-    .sobre-tony {
-        flex-direction: column;
-        padding: 20px;
+    .project img {
+        width: 80%; 
     }
 
-    .sobre-tony img {
-        width: 80%;
-        max-width: 300px;
-    }
-
-    .sobre-tony .texts {
-        font-size: 16px;
-        text-align: center;
-    }
-}
-
-/* Responsividade para Dispositivos Móveis */
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 30px;
-    }
-
-    .sobre-tony {
-        width: 90%;
-        padding: 10px;
-    }
-
-    .sobre-tony img {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .sobre-tony .texts {
-        font-size: 14px;
+    .project .text {
+        font-size: 16px; 
     }
 }

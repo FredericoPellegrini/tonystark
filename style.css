@@ -12,7 +12,7 @@ body {
     background-image: url('imgs/bg.jpg');
     background-size: cover;
     background-attachment: fixed;
-    background-position: 50% 0;
+    background-position: center;
     height: 150vh; 
 }
 
@@ -22,22 +22,7 @@ header {
     align-items: center;
     padding: 20px;
     flex-wrap: wrap;
-}
-
-@media screen and (max-width: 768px) {
-    .areadivs {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header h1 {
-        font-size: 40px;
-    }
-
-    .name h1 {
-        font-size: 60px;
-    }
+    margin-bottom: 20px; 
 }
 
 header h1 {
@@ -63,35 +48,33 @@ nav ul li a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 nav ul li a:hover {
     background-color: black;
     color: #fff;
-    border-radius: 30px;
 }
 
 .areadivs {
     background-color: rgba(255, 255, 255, 0.8); 
     width: 60%; 
     padding: 30px;
-    margin: 100px 0; 
     margin-left: auto; 
     margin-right: 50px; 
+    margin-top: 50px;
 }
+
 
 .name {
-    text-align: left; 
+    text-align: center; 
 }
 
-.areadivs .p1{
+.areadivs .p1 {
     font-size: 36px;
     font-style: italic;
-    text-align: center;
 }
 
-.areadivs .p2{
+.areadivs .p2 {
     font-size: 18px;
-    justify-content: center;
+    margin-bottom: 20px; 
 }
 
 .name h1 {
@@ -99,13 +82,35 @@ nav ul li a:hover {
     text-transform: uppercase;
     font-size: 100px; 
     color: #BF1E2E;
-    margin-bottom: 60px; 
-    text-align: center;
+    margin-bottom: 40px; 
 }
 
 .name p {
     font-size: 16px; 
     color: #333;
-    margin-bottom: 60px; 
+    margin-bottom: 20px; 
     line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    .name h1 {
+        font-size: 60px;
+    }
+    
+    .areadivs {
+        width: 90%; 
+        padding: 20px; 
+    }
+
+    .areadivs .p1 {
+        font-size: 30px; 
+    }
+
+    .areadivs .p2 {
+        font-size: 16px; 
+    }
 }
